@@ -12,12 +12,12 @@ $(document).ready(function () {
         usedValues = [];
         initCrystal();
 
-        $("#crystal1").html('<img src=' + '"./assets/images/crystal1.jpg"' + 'value =' + crystalAry[0] + ' alt="crystal">')
-        $("#crystal2").html('<img src=' + '"./assets/images/crystal2.jpg"' + 'value =' + crystalAry[1] + ' alt="crystal">')
-        $("#crystal3").html('<img src=' + '"./assets/images/crystal3.jpg"' + 'value =' + crystalAry[2] + ' alt="crystal">')
-        $("#crystal4").html('<img src=' + '"./assets/images/crystal4.jpg"' + 'value =' + crystalAry[3] + ' alt="crystal">')
+        $("#crystal1").html('<img src=' + '"./assets/images/crystal1.jpg"' + 'value =' + crystalAry[0] + ' alt="crystal" class="img-fluid">')
+        $("#crystal2").html('<img src=' + '"./assets/images/crystal2.jpg"' + 'value =' + crystalAry[1] + ' alt="crystal" class="img-fluid">')
+        $("#crystal3").html('<img src=' + '"./assets/images/crystal3.jpg"' + 'value =' + crystalAry[2] + ' alt="crystal" class="img-fluid">')
+        $("#crystal4").html('<img src=' + '"./assets/images/crystal4.jpg"' + 'value =' + crystalAry[3] + ' alt="crystal" class="img-fluid">')
 
-        $("#player-score").html("Your total score is: " + playerScore);
+        $("#player-score").html(playerScore);
 
         givenScore = Math.floor(Math.random() * 102 + 19);
         $("#given-score").html(givenScore);
@@ -40,7 +40,7 @@ $(document).ready(function () {
 
     $("span").on("click", function () {
         playerScore += parseInt($(this).children().attr("value"));
-        $("#player-score").html("Your total score is: " + playerScore);
+        $("#player-score").html(playerScore);
 
         if (playerScore === givenScore) {
             wins++;
