@@ -12,10 +12,10 @@ $(document).ready(function () {
         usedValues = [];
         initCrystal();
 
-        $("#crystal1").html('<img src=' + '"./assets/images/crystal1.jpg"' + 'value =' + crystalAry[0] + ' alt="crystal" class="img-fluid">')
-        $("#crystal2").html('<img src=' + '"./assets/images/crystal2.jpg"' + 'value =' + crystalAry[1] + ' alt="crystal" class="img-fluid">')
-        $("#crystal3").html('<img src=' + '"./assets/images/crystal3.jpg"' + 'value =' + crystalAry[2] + ' alt="crystal" class="img-fluid">')
-        $("#crystal4").html('<img src=' + '"./assets/images/crystal4.jpg"' + 'value =' + crystalAry[3] + ' alt="crystal" class="img-fluid">')
+        $("#crystal1").html('<img src=' + '"./assets/images/crystal1.png"' + 'value =' + crystalAry[0] + ' alt="crystal" class="img-fluid">')
+        $("#crystal2").html('<img src=' + '"./assets/images/crystal2.png"' + 'value =' + crystalAry[1] + ' alt="crystal" class="img-fluid">')
+        $("#crystal3").html('<img src=' + '"./assets/images/crystal3.png"' + 'value =' + crystalAry[2] + ' alt="crystal" class="img-fluid">')
+        $("#crystal4").html('<img src=' + '"./assets/images/crystal4.png"' + 'value =' + crystalAry[3] + ' alt="crystal" class="img-fluid">')
 
         $("#player-score").html(playerScore);
 
